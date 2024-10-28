@@ -53,7 +53,7 @@ export default function App() {
       <StatusBar backgroundColor="#008cff" barStyle="light-content" />
 
       <View style={styles.container}>
-        <Text style={styles.title}>Minhas tarefas</Text>
+        <Text style={styles.title}>Meus tweets</Text>
       </View>
 
    
@@ -73,7 +73,7 @@ export default function App() {
       <TouchableOpacity onPress={() => setOpen(false)}>
         <Ionicons style={{ marginLeft: 5, marginRight: 5 }} name="arrow-back-outline" size={40} color="#FFF" />
       </TouchableOpacity>
-      <Text style={styles.modalTitle}>Nova tarefa</Text>
+      <Text style={styles.modalTitle}>Novo tweet</Text>
     </View>
 
     <Animatable.View style={styles.modalBody} animation="fadeInUp" useNativeDriver>
@@ -81,14 +81,14 @@ export default function App() {
         multiline={true}
         placeholderTextColor="$747474"
         autoCorrect={false}
-        placeholder="O que precisa fazer hoje?"
+        placeholder="O que esta pensando hoje?"
         style={styles.input}
         value={input}
         onChangeText={(texto) => setInput(texto)}
       />
 
       <TouchableOpacity onPress={handleAdd}>
-        <Text style={styles.handleAdd}>Cadastrar</Text>
+        <Text style={styles.handleAdd}>Postar</Text>
       </TouchableOpacity>
     </Animatable.View>
   </SafeAreaView>
