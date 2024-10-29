@@ -86,6 +86,7 @@ export default function App() {
         value={input}
         onChangeText={(texto) => setInput(texto)}
       />
+      
 
       <TouchableOpacity onPress={handleAdd}>
         <Text style={styles.handleAdd}>Postar</Text>
